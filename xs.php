@@ -27,6 +27,11 @@ if (count($ms) > 0) {
     div {
         font-size:30px;
     }
+
+    a {
+        margin-left: 60px;
+        font-size:50px;
+    }
 </style>
 EOF;
 
@@ -41,7 +46,7 @@ EOF;
         if (is_array($ms2[0])) {
             $next = array_pop($ms2[0]);
             $next = str_replace('">下一章', '', $next);
-            $next = '<a href="?u='. $next .'" style="margin-left:30px;">下一章</a>';
+            $next = '<br/><br/><a href="?u='. $next .'">下一章</a><br/><br/><br/><br/>';
         }
     }
     echo $data . $next;
