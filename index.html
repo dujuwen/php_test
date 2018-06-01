@@ -3,14 +3,50 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	.container {
+		display: flex;
+		height: 800px;
+	}
+	
+	.item {
+		background-color: #902200;
+		margin-right: 20px;
+		margin-bottom: 20px;
+		font-size: 100px;
+		font-color: white;
+	}
+	
+	.item1 {
+		width: 200px;
+		height: 300px;
+	}
+	.item2 {
+		width: 300px;
+		height: 400px;
+		order: -2;
+	}
+	.item3 {
+		width: 300px;
+		height: 400px;
+		order: -1;
+	}
+</style>
 </head>
 <body>
-	<form enctype="multipart/form-data" action="/index.php" method="POST">
-    <!-- MAX_FILE_SIZE must precede the file input field -->
-    <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
-    <!-- Name of input element determines name in $_FILES array -->
-    Send this file: <input name="userfile" type="file" />
-    <input type="submit" value="Send File" />
-</form>
+	<div class="container">
+		<div class="item item1">1</div>
+		<div class="item item2">2</div>
+		<div class="item item3">3</div>
+		<div class="item item3">4</div>
+		<div class="item item3">5</div>
+		<div class="item item3">6</div>
+		<div class="item item3">7</div>
+		<div class="item item3">8</div>
+	</div>
 </body>
 </html>

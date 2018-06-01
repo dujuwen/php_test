@@ -585,10 +585,84 @@
 
 // echo("ss");
 
-var_dump(11);
+// $password = 'djwtes';
+// $hash = password_hash($password, PASSWORD_DEFAULT);
+// var_dump($hash, password_verify($password, $hash), password_get_info($hash));
 
-echo 222;
-return 'xxx';
+// function myErrorHandler($errno, $errstr, $errfile, $errline)
+// {
+//     var_dump('eee:' . $errstr);die;
+// }
+// function myErrorHandler2($errno, $errstr, $errfile, $errline)
+// {
+//     var_dump('eee:' . $errstr);die;
+// }
+// $re = set_error_handler('myErrorHandler');
+// $re2 = set_error_handler('myErrorHandler2');
+
+// var_dump($re, $re2);
+
+// set_exception_handler('myErrorHandler');
+
+// var_dump(date_default_timezone_get(), date('Y-m-d H:i:s'));
+
+// 处理断言失败时的函数
+// function my_assert_handler($file, $line, $code, $desc = null)
+// {
+//     echo "Assertion failed at $file:$line: $code";
+//     if ($desc) {
+//         echo ": $desc";
+//     }
+//     echo "\n";
+// }
+
+// // 设置断言标志
+// assert_options(ASSERT_ACTIVE,   true);
+// assert_options(ASSERT_BAIL,     true);
+// assert_options(ASSERT_WARNING,  true);
+// assert_options(ASSERT_CALLBACK, 'my_assert_handler');
+
+// assert(true == false, 'sb');
+// echo 'Hi!';
+
+// session_reset();
+// session_start();
+// session_reset();
+// if (!isset($_SESSION['count3'])) {
+//     $_SESSION['count3'] = 0;
+// } else {
+//     $_SESSION['count3'] =  $_SESSION['count3'] + 1;
+// }
+// var_dump($_SESSION, session_status(), PHP_SESSION_ACTIVE);
+
+// $str = 'This is an encoded string';
+// $chars = preg_split('//', $str);
+// print_r($chars);
+
+// $url = 'https://www.tuhu.org/';
+// print_r(get_headers($url));
+
+// $str = 'foo ~';
+// var_dump(urlencode($str), rawurlencode($str));
+// $str = 'sales and marketing/Miami';
+// var_dump(urlencode($str), rawurlencode($str));
+// string(7) "foo+%7E"
+// string(7) "foo%20~"
+// string(27) "sales+and+marketing%2FMiami"
+// string(31) "sales%20and%20marketing%2FMiami"
+
+// $arr = [1, 2 ,'sss', ['sd', '2', 99]];
+// var_dump($arr);
+// var_export($arr);
+// print_r($arr);
+
+
+
+
+
+
+
+
 
 
 
