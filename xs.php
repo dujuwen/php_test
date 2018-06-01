@@ -35,12 +35,6 @@ if (count($ms) > 0) {
 </style>
 EOF;
 
-    if (is_array($ms[0])) {
-        $data .= array_pop($ms[0]);
-    } else {
-        $data .= $ms[0];
-    }
-
     $next = '';
     if (count($ms2) > 0) {
         if (is_array($ms2[0])) {
@@ -49,6 +43,14 @@ EOF;
             $next = '<br/><br/><a href="?u='. $next .'">下一章</a><br/><br/><br/><br/>';
         }
     }
+    $data = $next . $data;
+
+    if (is_array($ms[0])) {
+        $data .= array_pop($ms[0]);
+    } else {
+        $data .= $ms[0];
+    }
+
     echo $data . $next;
 } else {
     echo '没有内容!';
