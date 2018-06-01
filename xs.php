@@ -22,11 +22,20 @@ if (count($ms) > 0) {
     if (count($ms1)) {
         $data = $ms1[0][0] ?? '';
     }
+    $data .= <<<EOF
+<style>
+    div {
+        font-size:30px;
+    }
+</style>
+EOF;
+
     if (is_array($ms[0])) {
         $data .= array_pop($ms[0]);
     } else {
         $data .= $ms[0];
     }
+
     $next = '';
     if (count($ms2) > 0) {
         if (is_array($ms2[0])) {
