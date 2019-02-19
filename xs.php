@@ -51,6 +51,7 @@ EOF;
         $data .= $ms[0];
     }
 
+    $data = mb_substr($data, 0, mb_strlen($data) - 130);
     echo $data . $next;
 } else {
     echo '没有内容!';
